@@ -29,6 +29,7 @@ return {
 				dotfiles = false,
 				git_ignored = false,
 				git_clean = false,
+				custom = {"hie"}
 			},
 		})
 		vim.keymap.set('n', '<c-n>', ':NvimTreeFindFile<CR>')
