@@ -17,17 +17,17 @@ map('n', 'Q', function()
   print('Hello')
 end, {desc = 'Say hello'})
 
-vim.keymap.set('n', '<Leader>r', function()
-  local replacement = vim.fn.input("Replace with : ") 
-  
-  -- Validate the input
-  if replacement ~= "" then
-    vim.cmd(":%s//" .. replacement .. "/g")
-  else
-    print("No replacement provided")
-  end
-end, { noremap = true, silent = true })
-
+-- vim.keymap.set('n', '<Leader>r', function()
+--   local replacement = vim.fn.input("Replace with : ") 
+--
+--   -- Validate the input
+--   if replacement ~= "" then
+--     vim.cmd(":%s//" .. replacement .. "/g")
+--   else
+--     print("No replacement provided")
+--   end
+-- end, { noremap = true, silent = true })
+--
 set.tabstop = 4
 set.shiftwidth = 4
 set.softtabstop = 4
